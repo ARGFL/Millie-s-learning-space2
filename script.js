@@ -127,7 +127,7 @@ function checkPronunciation(userInput) {
 
     if (distance <= threshold) {
         console.log("Pronunciation correct, playing positive feedback.");
-        playAudioFeedback('./positiveFeedback.mp3');
+        playAudioFeedback('./recordingfruit/positive_feedback.mp3');
         document.getElementById("nextWordButton").disabled = false;
     } else {
         console.log("Pronunciation incorrect, playing retry feedback.");
