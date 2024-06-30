@@ -1,4 +1,4 @@
-const words = ["apple", "banana", "pear","plum","grapes","cherry","berry","strawberry","blueberry","raspberry","orane","mango","melon","watermelon","pineapple"];
+const words = ["apple", "banana", "pear","plum","grapes","cherry","berry","strawberry","blueberry","raspberry","orange","mango","melon","watermelon","pineapple"];
 
 const correctPronunciation = {
     "apple": "./recordingfruit/apple.mp3",
