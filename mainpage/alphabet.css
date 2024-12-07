@@ -1,0 +1,28 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('');
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.letters {
+  font-family:'Poppins', sans-serif ;
+  font-size: 30px;
+  display: flex;
+  align-items: baseline;
+}
+
+      

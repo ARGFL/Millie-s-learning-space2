@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./Fruitsbackground.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none; /* Remove underline from link */
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+
+.nav {
+    background-color: #333;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-item {
+    float: left;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #111;
+}
+
+main {
+    padding: 20px;
+}
+
+.pronunciation, .writing-practice {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.word-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.wordToPronounce {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.fruitImage {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.translation {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.feedback {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.writing-practice {
+    display: none; /* Initially hidden */
+}
+
+.writing-practice input {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* New CSS for subcategories */
+.subcategories {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.subcategories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.subcategories ul ul {
+    padding-left: 20px;
+}
+
+.subcategories li {
+    margin: 5px 0;
+}
+
+.subcategories a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.subcategories a:hover {
+    text-decoration: underline;
+}
+
+/* CSS for Tooltip Effect */
+
+.tooltip-header {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tooltip-header:hover {
+    color: transparent; /* Hide the text on hover */
+}
+
+.tooltip-header::after {
+    content: attr(data-hover-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease;
+    text-align: center;
+    line-height: inherit; /* Align the text vertically */
+}
+
+.tooltip-header:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip-header {
+    transition: color 0.5s ease;
+}

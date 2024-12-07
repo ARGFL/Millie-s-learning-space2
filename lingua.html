@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Quiz</title>
+  <style>
+    .button { margin: 20px; padding: 10px; background-color: #ff00c3; color: white; border: none; cursor: pointer; font-size: 35px;}
+    #feedback { margin-top: 20px; font-weight: bold;font-size: 35px; }
+  </style>
+</head>
+<body>
+  <h1>Ce auzi? Selecteaza butonul cu scrierea corecta!</h1>
+  <button onclick="playAudio()" class="button">🔊</button>
+  <div id="options">
+    <!-- Options will be dynamically generated here -->
+  </div>
+  <p id="feedback"></p>
+  <button onclick="nextQuestion()" class="button">Next</button>
+  <button onclick="resetQuiz()" id="retryButton" class="button" style="display: none;">Try again</button>
+  
+  <script src="quiz.js"></script>
+</body>
+</html>
